@@ -55,6 +55,9 @@ class Employee:
             empPaid = 'Hourly employee: $7.25/hour'
         return str(self.first_name) + str(self.last_name) + '\n' + str(self.address) + '\n' + str(empPaid) + '\n' + str(self.start_date)
 
+    def __repr__(self):
+        return str(self.first_name) + str(self.last_name) + '\n' + str(self.address) + '\n' + str(empPaid) + '\n' + str(self.start_date)
+
 if __name__ == "__main__":
     emp1 = Employee('McGinley', 'Joshua ', '1212 8th St N\nNewnet, Iowa', '555-1212', False, 'Start date: 11-2-2022', '7.50')
     print(str(emp1))
